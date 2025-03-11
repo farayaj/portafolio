@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+    --color-primario: #F8F3D9;
+    --color-secundario: #504B38;
+    --color-terciario: #8b8366;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 9px;
+    padding: 3px;
+    border: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 2% 0% 0% 15%; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.header__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.header__menu__link {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.destaque-en-titulo {
+    color: #504B38;
+}
+
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 4% 13%;
+    justify-content: center;
+    gap: 80px;
+    flex-direction: row;
+}
+
+.presentacion__contenido {
+    width: 50%;    
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.experience {
+    flex: 1; /* Make each experience take up equal space */
+    margin: 10px; /* Adjust the margin as needed */
+    min-width: 800px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2.12rem;
+    font-family: "Krona One", sans-serif;
+    color: #8b8366;
+}
+
+.presentacion__contenido_descripcion {
+    font-size: 1.37rem;
+    list-style-type: disc; /* Default bullet points */
+    font-family: "Montserrat", sans-serif;
+    color: #504B38;
+}
+
+.presentacion__contenido_descripcion ul {
+    list-style-type: disc; /* Default bullet points */
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.presentacion__contenido_descripcion li {
+    margin-bottom: 10px; /* Adjust spacing between items as needed */
+}
+
+.presentacion__contenido__botones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.presentacion__enlace__link{
+    width: 50%;
+    color: #504B38;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 21.5px 0;
+    border: 2px solid #504B38;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.presentacion__enlace__link:hover {
+    background-color: #8b8366;
+    color: #F8F3D9;
+}
+
+.presentacion__enlace__link:hover img {
+    filter: brightness(0) invert(1); /* This will invert the colors of the image */
+}   
+
+
+.presentacion__enlaces__subtitulo {
+    font-size: 1.37rem;
+    font-family: "Krona One", sans-serif;
+    color: #504B38;
+    font-weight: 400;
+}
+
+.presentacion__img {
+    width: 50%;
+    position:relative;
+    top: -80px;
+    border-radius: 8px;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+          
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: #504B38;
+    color: #F8F3D9;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    border-radius: 8px;
+}
+
+.footer__enlace {
+    color: #F8F3D9;
+    text-decoration: none;
+    margin:0;
+    padding:0; 
+}
+
+.footer__enlace__content {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Adjust the gap as needed */
+}
+
+.footer__enlace__content img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+}
+
+.icon__color {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width:auto
+    }
+} 
